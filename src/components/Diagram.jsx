@@ -1,4 +1,4 @@
-import Diagram, { createSchema, useSchema } from "beautiful-react-diagrams";
+import Diagram, { createSchema, useSchema } from "../lib/beautiful-react-diagrams";
 
 import "beautiful-react-diagrams/styles.css";
 import Card from "./Card";
