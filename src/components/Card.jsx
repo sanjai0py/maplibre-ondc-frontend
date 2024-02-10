@@ -27,24 +27,26 @@ const Card = ({ imgLink, altTxt, numberOfNodes, title, desc, frameLink }) => {
       <Modal size={"7xl"} className="h-full" show={openModal} onClose={() => setOpenModal(false)}>
         <Modal.Header>{title}</Modal.Header>
         <Modal.Body>
-          <div className="space-y-6" style={{height:"100vh"}}>
+          <div className="space-y-6 flex" style={{height:"75vh"}}>
             <iframe
               className="w-full h-full"
-              width={"100vh"}
               src={frameLink}
               frameborder="0"
             ></iframe>
+            <div className="m-5">
+            <h3 className="text-2xl mb-5">{title}</h3>
             <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
               {desc}
             </p>
+            </div>
           </div>
         </Modal.Body>
-        <Modal.Footer>
+        {/* <Modal.Footer>
           <Button onClick={() => setOpenModal(false)}>I accept</Button>
           <Button color="gray" onClick={() => setOpenModal(false)}>
             Decline
           </Button>
-        </Modal.Footer>
+        </Modal.Footer> */}
       </Modal>
 
       <div className="absolute bottom-[95%] left-[12rem] p-5 w-10 h-10 bg-[#1DA1F2] rounded-full flex justify-center align-middle">

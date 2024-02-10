@@ -16,10 +16,10 @@ const initialSchema = createSchema({
           imgLink={
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
-          frameLink={"https://maplibre-ondc.onrender.com/fly_to_point.html"}
+          frameLink={"https://maplibre-ondc.onrender.com/motorable_path.html"}
           numberOfNodes="1"
           altTxt={"some alt text"}
-          title={"Smart Pathfinding"}
+          title={"Motorable Path Planning"}
           desc={
             "Efficiently discover the best road route and measure distances using the Haversine formula."
           }
@@ -36,10 +36,10 @@ const initialSchema = createSchema({
           imgLink={
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
-          frameLink={"https://maplibre-ondc.onrender.com/fly_to_point.html"}
+          frameLink={"https://maplibre-ondc.onrender.com/motorable_path.html"}
           numberOfNodes="2"
           altTxt={"some alt text"}
-          title={"Straight-Line Distances"}
+          title={"Haversine Distance"}
           desc={
             "Discover the direct path between two points, ensuring accurate spatial measurements"
           }
@@ -54,7 +54,7 @@ const initialSchema = createSchema({
           imgLink={
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
-          frameLink={"https://maplibre-ondc.onrender.com/fly_to_point.html"}
+          frameLink={"https://maplibre-ondc.onrender.com/polygon_mapping.html"}
           altTxt={"some alt text"}
           numberOfNodes="3"
           title={"Polygon Mapping"}
@@ -90,7 +90,7 @@ const initialSchema = createSchema({
           imgLink={
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
-          frameLink={"https://maplibre-ondc.onrender.com/fly_to_point.html"}
+          frameLink={"https://maplibre-ondc.onrender.com/geocode.html"}
           numberOfNodes="5"
           title={"Geocoding Solutions"}
           desc={
@@ -108,7 +108,7 @@ const initialSchema = createSchema({
           imgLink={
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
-          frameLink={"https://maplibre-ondc.onrender.com/fly_to_point.html"}
+          frameLink={"https://maplibre-ondc.onrender.com/reverse_geocode.html"}
           title={"Reverse Geocoding"}
           desc={
             "Decode coordinates to addresses seamlessly for enhanced location precision"
@@ -127,12 +127,12 @@ const initialSchema = createSchema({
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
           numberOfNodes="7"
-          title={"blah blah"}
+          title={"Find Services"}
           desc={
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore"
           }
           altTxt={"some alt text"}
-          frameLink={"https://maplibre-ondc.onrender.com/fly_to_point.html"}
+          frameLink={"https://maplibre-ondc.onrender.com/find_services.html"}
         />
       ),
       coordinates: [250, 450],
@@ -145,12 +145,12 @@ const initialSchema = createSchema({
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
           numberOfNodes="8"
-          title={"yeet yeet"}
+          title={"Finde Services example"} 
           desc={
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore"
           }
           altTxt={"some alt text"}
-          frameLink={"https://maplibre-ondc.onrender.com/fly_to_point.html"}
+          frameLink={"https://maplibre-ondc.onrender.com/find_places.html"}
         />
       ),
       coordinates: [30, 270],
