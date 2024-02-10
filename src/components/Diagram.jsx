@@ -18,6 +18,12 @@ const initialSchema = createSchema({
           }
           numberOfNodes="1"
           altTxt={"some alt text"}
+          title={"Smart Pathfinding"}
+          desc={
+            "Efficiently discover the best road route and measure distances using the Haversine formula."
+          }
+          bottom="200px"
+          left="400px"
         />
       ),
       coordinates: [300, 30],
@@ -31,6 +37,10 @@ const initialSchema = createSchema({
           }
           numberOfNodes="2"
           altTxt={"some alt text"}
+          title={"Straight-Line Distances"}
+          desc={
+            "Discover the direct path between two points, ensuring accurate spatial measurements"
+          }
         />
       ),
       coordinates: [650, 50],
@@ -44,6 +54,10 @@ const initialSchema = createSchema({
           }
           altTxt={"some alt text"}
           numberOfNodes="3"
+          title={"Polygon Mapping"}
+          desc={
+            "Efficiently map polygons and calculate areas for diverse spatial applications."
+          }
         />
       ),
       coordinates: [1000, 40],
@@ -54,6 +68,10 @@ const initialSchema = createSchema({
         <Card
           imgLink={
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
+          }
+          title={"Uber H3 Mapping"}
+          desc={
+            "Harness Uber's H3 for efficient hexagonal polygon mapping and analysis."
           }
           altTxt={"some alt text"}
           numberOfNodes="4"
@@ -69,6 +87,10 @@ const initialSchema = createSchema({
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
           numberOfNodes="5"
+          title={"Geocoding Solutions"}
+          desc={
+            "Swiftly convert addresses to precise coordinates for seamless location integration."
+          }
           altTxt={"some alt text"}
         />
       ),
@@ -80,6 +102,10 @@ const initialSchema = createSchema({
         <Card
           imgLink={
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
+          }
+          title={"Reverse Geocoding"}
+          desc={
+            "Decode coordinates to addresses seamlessly for enhanced location precision"
           }
           numberOfNodes="6"
           altTxt={"some alt text"}
@@ -95,6 +121,10 @@ const initialSchema = createSchema({
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
           numberOfNodes="7"
+          title={"blah blah"}
+          desc={
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore"
+          }
           altTxt={"some alt text"}
         />
       ),
@@ -108,6 +138,10 @@ const initialSchema = createSchema({
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
           numberOfNodes="8"
+          title={"yeet yeet"}
+          desc={
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore"
+          }
           altTxt={"some alt text"}
         />
       ),

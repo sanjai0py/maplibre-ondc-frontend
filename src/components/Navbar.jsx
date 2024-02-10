@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="sticky top-0 flex justify-end p-4 bg-slate-400">
+    <nav className="sticky flex justify-end p-4 bg-slate-400">
       <ul className="flex gap-7 font-semibold text-lg">
         <li className="bg-red-400  px-4 rounded-lg">
           <a href="#">Home</a>
