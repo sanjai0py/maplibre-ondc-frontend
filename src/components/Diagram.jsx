@@ -16,6 +16,7 @@ const initialSchema = createSchema({
           imgLink={
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
+          frameLink={"https://maplibre-ondc.onrender.com/fly_to_point.html"}
           numberOfNodes="1"
           altTxt={"some alt text"}
           title={"Smart Pathfinding"}
@@ -35,6 +36,7 @@ const initialSchema = createSchema({
           imgLink={
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
+          frameLink={"https://maplibre-ondc.onrender.com/fly_to_point.html"}
           numberOfNodes="2"
           altTxt={"some alt text"}
           title={"Straight-Line Distances"}
@@ -52,6 +54,7 @@ const initialSchema = createSchema({
           imgLink={
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
+          frameLink={"https://maplibre-ondc.onrender.com/fly_to_point.html"}
           altTxt={"some alt text"}
           numberOfNodes="3"
           title={"Polygon Mapping"}
@@ -69,6 +72,7 @@ const initialSchema = createSchema({
           imgLink={
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
+          frameLink={"https://maplibre-ondc.onrender.com/fly_to_point.html"}
           title={"Uber H3 Mapping"}
           desc={
             "Harness Uber's H3 for efficient hexagonal polygon mapping and analysis."
@@ -86,6 +90,7 @@ const initialSchema = createSchema({
           imgLink={
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
+          frameLink={"https://maplibre-ondc.onrender.com/fly_to_point.html"}
           numberOfNodes="5"
           title={"Geocoding Solutions"}
           desc={
@@ -103,6 +108,7 @@ const initialSchema = createSchema({
           imgLink={
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
+          frameLink={"https://maplibre-ondc.onrender.com/fly_to_point.html"}
           title={"Reverse Geocoding"}
           desc={
             "Decode coordinates to addresses seamlessly for enhanced location precision"
@@ -126,6 +132,7 @@ const initialSchema = createSchema({
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore"
           }
           altTxt={"some alt text"}
+          frameLink={"https://maplibre-ondc.onrender.com/fly_to_point.html"}
         />
       ),
       coordinates: [250, 450],
@@ -143,6 +150,7 @@ const initialSchema = createSchema({
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore"
           }
           altTxt={"some alt text"}
+          frameLink={"https://maplibre-ondc.onrender.com/fly_to_point.html"}
         />
       ),
       coordinates: [30, 270],
