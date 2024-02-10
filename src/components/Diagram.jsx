@@ -1,6 +1,9 @@
-import Diagram, { createSchema, useSchema } from "../lib/beautiful-react-diagrams";
+import Diagram, {
+  createSchema,
+  useSchema,
+} from "../../lib/beautiful-react-diagrams";
 
-import "beautiful-react-diagrams/styles.css";
+import "../../lib/beautiful-react-diagrams/styles.css";
 import Card from "./Card";
 
 // the diagram model
@@ -10,36 +13,105 @@ const initialSchema = createSchema({
       id: "node-1",
       content: (
         <Card
-          imgLink={"https://http.cat/images/401.jpg"}
+          imgLink={
+            "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
+          }
+          numberOfNodes="1"
           altTxt={"some alt text"}
         />
       ),
-      coordinates: [100, 50],
+      coordinates: [300, 30],
     },
     {
       id: "node-2",
-      content: <Card imgLink={"https://http.cat/images/405.jpg"} />,
-      coordinates: [550, 50],
+      content: (
+        <Card
+          imgLink={
+            "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
+          }
+          numberOfNodes="2"
+          altTxt={"some alt text"}
+        />
+      ),
+      coordinates: [650, 50],
     },
     {
       id: "node-3",
-      content: <Card imgLink={"https://http.cat/images/407.jpg"} />,
-      coordinates: [1000, 50],
+      content: (
+        <Card
+          imgLink={
+            "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
+          }
+          altTxt={"some alt text"}
+          numberOfNodes="3"
+        />
+      ),
+      coordinates: [1000, 40],
     },
     {
       id: "node-4",
-      content: <Card imgLink={"https://http.cat/images/101.jpg"} />,
-      coordinates: [1000, 450],
+      content: (
+        <Card
+          imgLink={
+            "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
+          }
+          altTxt={"some alt text"}
+          numberOfNodes="4"
+        />
+      ),
+      coordinates: [1300, 300],
     },
     {
       id: "node-5",
-      content: <Card imgLink={"https://http.cat/images/418.jpg"} />,
-      coordinates: [550, 450],
+      content: (
+        <Card
+          imgLink={
+            "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
+          }
+          numberOfNodes="5"
+          altTxt={"some alt text"}
+        />
+      ),
+      coordinates: [950, 450],
     },
     {
       id: "node-6",
-      content: <Card imgLink={"https://http.cat/images/420.jpg"} />,
-      coordinates: [100, 450],
+      content: (
+        <Card
+          imgLink={
+            "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
+          }
+          numberOfNodes="6"
+          altTxt={"some alt text"}
+        />
+      ),
+      coordinates: [580, 450],
+    },
+    {
+      id: "node-7",
+      content: (
+        <Card
+          imgLink={
+            "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
+          }
+          numberOfNodes="7"
+          altTxt={"some alt text"}
+        />
+      ),
+      coordinates: [250, 450],
+    },
+    {
+      id: "node-8",
+      content: (
+        <Card
+          imgLink={
+            "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
+          }
+          numberOfNodes="8"
+          altTxt={"some alt text"}
+        />
+      ),
+      coordinates: [30, 270],
     },
   ],
   links: [
@@ -48,6 +120,10 @@ const initialSchema = createSchema({
     { input: "node-3", output: "node-4" },
     { input: "node-4", output: "node-5" },
     { input: "node-5", output: "node-6" },
+    { input: "node-6", output: "node-7" },
+    { input: "node-7", output: "node-8" },
+    { input: "node-8", output: "node-1" },
+    { input: "node-1", output: "node-6" },
   ],
 });
 
