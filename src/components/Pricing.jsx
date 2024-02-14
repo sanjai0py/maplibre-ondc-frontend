@@ -4,7 +4,10 @@ import { Card } from "flowbite-react";
 
 function Pricing({ id }) {
   return (
-    <div id={id} className="flex justify-center items-center h-screen gap-10">
+    <div
+      id={id}
+      className="flex justify-center bg-slate-300 items-center h-screen gap-20"
+    >
       <Card className="max-w-sm">
         <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
           Standard plan
