@@ -18,6 +18,7 @@ const initialSchema = createSchema({
           }
           frameLink={"https://maplibre-ondc.onrender.com/motorable_path.html"}
           numberOfNodes="1"
+          newTab={false}
           altTxt={"some alt text"}
           title={"Motorable Path Planning"}
           desc={
@@ -38,6 +39,7 @@ const initialSchema = createSchema({
           }
           frameLink={"https://maplibre-ondc.onrender.com/motorable_path.html"}
           numberOfNodes="2"
+          newTab={false}
           altTxt={"some alt text"}
           title={"Haversine Distance"}
           desc={
@@ -56,6 +58,7 @@ const initialSchema = createSchema({
           }
           frameLink={"https://maplibre-ondc.onrender.com/polygon_mapping.html"}
           altTxt={"some alt text"}
+          newTab={false}
           numberOfNodes="3"
           title={"Polygon Mapping"}
           desc={
@@ -72,7 +75,10 @@ const initialSchema = createSchema({
           imgLink={
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
-          frameLink={"https://maplibre-ondc.onrender.com/fly_to_point.html"}
+          frameLink={
+            "https://colab.research.google.com/gist/Pragadesh-45/6c25861744dd62acf726eb9749659b4d/geojson-h3.ipynb"
+          }
+          newTab={true}
           title={"Uber H3 Mapping"}
           desc={
             "Harness Uber's H3 for efficient hexagonal polygon mapping and analysis."
@@ -93,6 +99,7 @@ const initialSchema = createSchema({
           frameLink={"https://maplibre-ondc.onrender.com/geocode.html"}
           numberOfNodes="5"
           title={"Geocoding Solutions"}
+          newTab={false}
           desc={
             "Swiftly convert addresses to precise coordinates for seamless location integration."
           }
@@ -110,6 +117,7 @@ const initialSchema = createSchema({
           }
           frameLink={"https://maplibre-ondc.onrender.com/reverse_geocode.html"}
           title={"Reverse Geocoding"}
+          newTab={false}
           desc={
             "Decode coordinates to addresses seamlessly for enhanced location precision"
           }
@@ -126,10 +134,11 @@ const initialSchema = createSchema({
           imgLink={
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
+          newTab={false}
           numberOfNodes="7"
           title={"Find Services"}
           desc={
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore"
+            "Locate ONDC-powered services nearby for seamless digital commerce experiences."
           }
           altTxt={"some alt text"}
           frameLink={"https://maplibre-ondc.onrender.com/find_services.html"}
@@ -144,10 +153,11 @@ const initialSchema = createSchema({
           imgLink={
             "https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg"
           }
+          newTab={false}
           numberOfNodes="8"
-          title={"Finde Services example"} 
+          title={"Finde Services example"}
           desc={
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore"
+            "Find local businesses using ONDC for seamless digital transactions around you."
           }
           altTxt={"some alt text"}
           frameLink={"https://maplibre-ondc.onrender.com/find_places.html"}
@@ -169,12 +179,12 @@ const initialSchema = createSchema({
   ],
 });
 
-const UncontrolledDiagram = () => {
+const UncontrolledDiagram = ({ id, title }) => {
   // create diagrams schema
   const [schema, { onChange }] = useSchema(initialSchema);
 
   return (
-    <div className="h-screen">
+    <div id={id} className="h-screen shadow-none">
       <Diagram schema={schema} onChange={onChange} />
     </div>
   );
