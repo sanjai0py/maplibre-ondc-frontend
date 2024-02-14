@@ -1,9 +1,9 @@
 import Diagram, {
   createSchema,
   useSchema,
-} from "../../lib/beautiful-react-diagrams";
+} from "../lib/beautiful-react-diagrams";
 
-import "../../lib/beautiful-react-diagrams/styles.css";
+import "../lib/beautiful-react-diagrams/styles.css";
 import Card from "./Card";
 
 // the diagram model

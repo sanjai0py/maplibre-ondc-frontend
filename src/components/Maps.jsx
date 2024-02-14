@@ -30,7 +30,7 @@ const Maps = () => {
             Front-end
           </a>
           <a
-            href="https://ondc.gov.in/"
+            href="https://github.com/Pragadesh-45/maplibre-ondc"
             target="_blank"
             rel="noopener noreferrer"
             className="p-1 mt-3 text-white rounded-md bg-slate-600"

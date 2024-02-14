@@ -14,7 +14,7 @@ function Pricing({ id }) {
         </h5>
         <div className="flex items-baseline text-gray-900 dark:text-white">
           <span className="text-3xl font-semibold">$</span>
-          <span className="text-5xl font-extrabold tracking-tight">49</span>
+          <span className="text-5xl font-extrabold tracking-tight">29</span>
           <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">
             /month
           </span>
@@ -143,7 +143,7 @@ function Pricing({ id }) {
       </Card>
       <Card className="max-w-sm">
         <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
-          Standard plan
+          Pro plan
         </h5>
         <div className="flex items-baseline text-gray-900 dark:text-white">
           <span className="text-3xl font-semibold">$</span>
@@ -204,9 +204,9 @@ function Pricing({ id }) {
               Integration help
             </span>
           </li>
-          <li className="flex space-x-3 line-through decoration-gray-500">
+          <li className="flex space-x-3 ">
             <svg
-              className="h-5 w-5 shrink-0 text-gray-400 dark:text-gray-500"
+              className="h-5 w-5 shrink-0 text-cyan-600 dark:text-cyan-500"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -221,9 +221,9 @@ function Pricing({ id }) {
               Sketch Files
             </span>
           </li>
-          <li className="flex space-x-3 line-through decoration-gray-500">
+          <li className="flex space-x-3">
             <svg
-              className="h-5 w-5 shrink-0 text-gray-400 dark:text-gray-500"
+              className="h-5 w-5 shrink-0 text-cyan-600 dark:text-cyan-50"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -238,9 +238,9 @@ function Pricing({ id }) {
               API Access
             </span>
           </li>
-          <li className="flex space-x-3 line-through decoration-gray-500">
+          <li className="flex space-x-3">
             <svg
-              className="h-5 w-5 shrink-0 text-gray-400 dark:text-gray-500"
+              className="h-5 w-5 shrink-0  text-cyan-600 dark:text-cyan-50"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -255,9 +255,9 @@ function Pricing({ id }) {
               Complete documentation
             </span>
           </li>
-          <li className="flex space-x-3 line-through decoration-gray-500">
+          <li className="flex space-x-3">
             <svg
-              className="h-5 w-5 shrink-0 text-gray-400 dark:text-gray-500"
+              className="h-5 w-5 shrink-0  text-cyan-600 dark:text-cyan-50"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
