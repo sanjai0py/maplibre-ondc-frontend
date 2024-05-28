@@ -21,7 +21,7 @@ const Card = ({
         <span className="font-bold text-lg">{title}</span>
         <p className="text-xs">{desc}</p>
 
-        {newTab ? (
+        {
           <a
             href={frameLink}
             target="_blank"
@@ -30,17 +30,10 @@ const Card = ({
           >
             View more
           </a>
-        ) : (
-          <button
-            className="p-1 mt-3 text-white rounded-md bg-slate-600"
-            onClick={() => setOpenModal(true)}
-          >
-            View more
-          </button>
-        )}
+        }
       </div>
 
-      <Modal
+      {/* <Modals
         size={"7xl"}
         className="h-full"
         show={openModal}
@@ -62,7 +55,7 @@ const Card = ({
             </div>
           </div>
         </Modal.Body>
-      </Modal>
+      </Modals> */}
 
       <div className="absolute bottom-[95%] left-[12rem] p-5 w-10 h-10 bg-[#1DA1F2] rounded-full flex justify-center align-middle">
         <span className="relative bottom-[15px] text-2xl font-bold text-center text-[#ffffff]">

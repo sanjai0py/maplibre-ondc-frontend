@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: maplibre-ondc-frontend-c
+    image: maplibre-ondc-frontend-i
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    
